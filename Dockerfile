@@ -1,4 +1,4 @@
-FROM node:7.4.0
+FROM node:0.10.47
 MAINTAINER avikez@gmail.com (Dmitry Shmelev)
 
 RUN apt-get update && apt-get install -y \

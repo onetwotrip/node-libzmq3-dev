@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:0.12.18
 MAINTAINER avikez@gmail.com (Dmitry Shmelev)
 
 RUN apt-get update && apt-get install -y \

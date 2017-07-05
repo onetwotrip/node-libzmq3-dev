@@ -4,8 +4,8 @@ MAINTAINER avikez@gmail.com (Dmitry Shmelev)
 RUN apt-get update && apt-get install -y \
   libzmq3-dev \
   python-minimal
-RUN cd $(npm root -g)/npm
-  && npm install fs-extra
+RUN cd $(npm root -g)/npm \
+  && npm install fs-extra \
   && sed -i -e s/graceful-fs/fs-extra/ -e s/fs.rename/fs.move/ ./lib/utils/rename.js
 RUN npm install -g npm
 RUN npm install -g npm-cache
